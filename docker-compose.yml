@@ -18,7 +18,7 @@ services:
 
   frontend:
     build:
-      context: ./frontend
+      context: ./next
       dockerfile: Dockerfile
     expose:
       - "3000"
@@ -27,7 +27,7 @@ services:
 
   backend:
     build:
-      context: ./backend
+      context: ./laravel
       dockerfile: Dockerfile
     expose:
       - "9000"
